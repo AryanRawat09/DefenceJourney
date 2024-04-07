@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>NDA page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <style type="text/css">
         *{
             margin: 0;
@@ -10,12 +12,26 @@
             font-family: 'Source Sans Pro',Arial, Helvetica, sans-serif;
             
         }
+        body{
+            background: rgba(254, 254, 254, 0.573) url('https://images.pexels.com/photos/3699921/pexels-photo-3699921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') ;
+         
+      /*  background-color: #B5c99A; */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+        height: 100vh;
+        width: auto; 
+        }
         
         h2{
             padding: 20px;
+            color: black;
         }
         h3,p{
             padding: 10px 20px;
+           
         }
         hr{
             margin: 0 20px;
@@ -23,35 +39,37 @@
         .left{
             width:30%;
             height: auto;
-            background-color:rgb(194, 194, 194);
+           
         }
         .photo{
-            width:373px;
+            width:330px;
             height: 200px;
-            background-image: url('https://ndacivrect.gov.in/images/homepage_image_1627112141278.jpg');
+            background-image: url('https://static.toiimg.com/thumb/msid-88233600,width-400,height-225,resizemode-72/88233600.jpg');
             background-size: cover;
-            border-radius: 20px;
-            box-shadow: 1px 1px 20px rgb(81, 78, 78)
+            border-radius: 10px;
+            box-shadow: 2px 4px 4px 2px rgb(54, 51, 51);
         }
         .container{
             display: flex;
             justify-content: space-between;
+            
         }
         .right{
             width:70%;
             height: auto;
-            background-color: #B5C99A;
+            /* background-color: #B5C99A; */
+            /* background: linear-gradient(to right, transparent,#718355); */
         }
         ul{
             padding: 10px 40px;
         }
         .tablehead{
-            background-color: #718355;
+            background-color: #b59f30c4;
             padding: 15px;
             
         }
         td{
-            background-color: whitesmoke;
+            background-color: rgba(245, 245, 245, 0.331);
             padding: 10px;
         }
         .nda{
@@ -74,12 +92,12 @@
             box-shadow: 1px 1px 20px rgb(81, 78, 78)
         }
       
-       
+    
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="left">
+        <div class="left bg-light">
             <h2>DefenceJourney</h2>
             <div class="photo"></div>
             <h3>NDA Course</h3><hr>
@@ -102,7 +120,7 @@
     </p>
         </div>
         <div class="right">
-            <h2 class="nda">NATIONAL DEFENCE ACADEMY</h2> <br> <hr>
+            <h2 class="dispaly-1">NATIONAL DEFENCE ACADEMY</h2> <br> <hr>
             <br>
            
 <br><br>
@@ -329,7 +347,9 @@
 <br><br><br><br><br><br><br><br><br><br>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+
 </body>
 </html>
-
 
