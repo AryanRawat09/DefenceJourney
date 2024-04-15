@@ -1,215 +1,294 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CDS page</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <style type="text/css">
-        *{
+        * {
             margin: 0;
             padding: 0px;
             ;
-            font-family: 'Source Sans Pro',Arial, Helvetica, sans-serif;
-            
+            font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+
         }
-        body{
-            background: rgba(254, 254, 254, 0.509) url('https://images.pexels.com/photos/3926344/pexels-photo-3926344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') ;
-         
-      /*  background-color: #B5c99A; */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-blend-mode: overlay;
-        height: 100vh;
-        width: auto; 
+
+        body {
+            background: rgba(254, 254, 254, 0.509) url('https://images.pexels.com/photos/3926344/pexels-photo-3926344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+
+            /*  background-color: #B5c99A; */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            height: 100vh;
+            width: auto;
         }
-        
-        h2{
+
+        h2 {
             padding: 20px;
         }
-        h3,p{
+
+        h3,
+        p {
             padding: 10px 20px;
-           
+
         }
-        hr{
+
+        hr {
             margin: 0 20px;
         }
-        .left{
-            width:30%;
+
+        .left {
+            width: 30%;
             height: auto;
         }
-        .photo{
-            width:330px;
+
+        .photo {
+            width: 330px;
             height: 200px;
             background-image: url('https://www.ssbcrack.com/wp-content/uploads/2022/07/IMA-dehradun-cadet.png');
             background-size: cover;
             border-radius: 10px;
             box-shadow: 2px 4px 4px 2px rgb(54, 51, 51);
         }
-        .container{
+
+        .container {
             display: flex;
             justify-content: space-between;
         }
-        .right{
-            width:70%;
+
+        .right {
+            width: 70%;
             height: auto;
             /* background-color: #B5C99A; */
             /* background: linear-gradient(to right, transparent,#718355); */
         }
-        ul{
+
+        ul {
             padding: 10px 40px;
         }
-        .tablehead{
+
+        .tablehead {
             background-color: #718355;
             padding: 15px;
-            
+
         }
-        td{
+
+        td {
             background-color: rgba(245, 245, 245, 0.498);
             padding: 10px;
         }
-        .nda{
+
+        .nda {
             font-family: serif;
             font-size: 50px;
 
         }
-        table{
+
+        table {
             align-items: center;
             margin-left: 100px;
         }
-        .dropdown{
+
+        .dropdown {
             padding: 20px;
             width: 35%;
-            background-image: linear-gradient(to bottom right,#CFE1B9,#718355);
+            background-image: linear-gradient(to bottom right, #CFE1B9, #718355);
             border-radius: 20px;
             margin-left: 30px;
             font-size: 26px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             box-shadow: 1px 1px 20px rgb(81, 78, 78)
         }
-      
-       
+
+        #cds_aside {
+            /* position: fixed; */
+            height: 100vh;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        #cds_container {
+            height: 100vh;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar {
+            background: transparent;
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            /* background: #fd9843; */
+            background: transparent;
+        }
+
+        #cds_heading {
+            color: #052c65;
+            padding: 2rem 1rem;
+            font-size: 2.5rem;
+            text-align: center !important;
+            /* background: var(--bs-dark); */
+        }
+        
+
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="left bg-light">
+        <div class="left bg-light" id="cds_aside">
             <h2>DefenceJourney</h2>
             <div class="photo"></div>
-            <h3>CDSE Course</h3><hr>
+            <h3>CDSE Course</h3>
+            <hr>
             <br>
-            <p > <b > COACHING CLASSES FOR CDS </b> <br> <br>Their are many coaching institutes offering CDS course in Chandigarh. <br><br>
-            
-          <u>Below are some best coaching institutes in sector 34 Chandigarh:</u>   <br><br>
-        1) <b>IFA</b> <br>
-         <b>Address:</b> SCO No.94-95 Top floor, Sector 34A, Sector 34, Chandigarh, 160022
-        
-        <br>
-    For online-demo classes: <a href="https://www.youtube.com/@ifadefenceacademy8072/featured">Youtube Channel</a> <br><br>
-    2) <b>Chandigarh Career Group</b><br>
-    <b>Address:</b> SCO 110-111, 3rd floor, Sector 34A, Sector 34, Chandigarh, 160022 <br>
-    For online-demo classes: <a href="https://www.youtube.com/@ChandigarhCareerGroup">Youtube channel</a> <br><br>
-    3) <b>Takshila Classes</b> <br>
-    <b>Address:</b> SCO 116-117, 2nd Floor, Sector 34A, Chandigarh, 160022 <br>
-    for online-deno classes: <a href="https://www.youtube.com/@ETakshilaClasses/featured">Youtube channel</a>
-    
-    </p>
+            <p> <b> COACHING CLASSES FOR CDS </b> <br> <br>Their are many coaching institutes offering CDS course in
+                Chandigarh. <br><br>
+
+                <u>Below are some best coaching institutes in sector 34 Chandigarh:</u> <br><br>
+                1) <b>IFA</b> <br>
+                <b>Address:</b> SCO No.94-95 Top floor, Sector 34A, Sector 34, Chandigarh, 160022
+
+                <br>
+                For online-demo classes: <a href="https://www.youtube.com/@ifadefenceacademy8072/featured">Youtube
+                    Channel</a> <br><br>
+                2) <b>Chandigarh Career Group</b><br>
+                <b>Address:</b> SCO 110-111, 3rd floor, Sector 34A, Sector 34, Chandigarh, 160022 <br>
+                For online-demo classes: <a href="https://www.youtube.com/@ChandigarhCareerGroup">Youtube channel</a>
+                <br><br>
+                3) <b>Takshila Classes</b> <br>
+                <b>Address:</b> SCO 116-117, 2nd Floor, Sector 34A, Chandigarh, 160022 <br>
+                for online-deno classes: <a href="https://www.youtube.com/@ETakshilaClasses/featured">Youtube
+                    channel</a>
+
+            </p>
         </div>
-        <div class="right">
-            <h2 class="dispaly-1">COMBINED DEFENCE SERVICES EXAMINATION</h2> <br> <hr>
+        <div class="right" id="cds_container">
+            <h2 class="dispaly-1" id="cds_heading">&Copf;&Oopf;&Mopf;&Bopf;&Iopf;&Nopf;&Eopf;&Dopf;
+                &Dopf;&Eopf;&Fopf;&Eopf;&Nopf;&Copf;&Eopf; &Sopf;&Eopf;&Ropf;&Vopf;&Iopf;&Copf;&Eopf;&Sopf;
+                &Eopf;&Xopf;&Aopf;&Mopf;&Iopf;&Nopf;&Aopf;&Topf;&Iopf;&Oopf;&Nopf;</h2>
+
+            <div class="w-100 border border-light mt-3 mb-t"></div>
+
+            <p> <b>CDS exam pattern:</b> The Union Public Service Commission speci fies the <b>CDS exam pattern</b> for
+                the <b>written exam</b> and <b>SSB Interview</b> . UPSC lays the best career option for candidates who
+                want to become a commissioned officer in the Indian Defence Forces. The candidate who wants to qualify
+                for the <b>CDS exam</b> must go through the exam pattern and syllabus of the CDS exam.
+                <br><br>
+                The latest CDS exam pattern was released on December 20, 2023, along with the release of the CDS 1
+                notification. UPSC will conduct the CDS 1 exam on April 21, 2024. The CDS exam will be conducted for the
+                admission of the candidates in <b> IMA, AFA, INA, and OTA.</b>
+                <br><br>
+                CDS exam patterns for the INA, AFA, and IMA are similar but the <b>CDS OTA exam pattern</b> is slightly
+                different from the other three. The CDS exam is conducted in two stages, the written exam and the SSB
+                interview. The CDS exam is an offline exam conducted in pen paper-based format. The CDS marking scheme,
+                negative marking, total marks, exam timing, and the paper pattern for the IMA, INA, AFA, and OTA are
+                available below for the CDS exam.
+            </p>
+
+            <br><br>
+            <h3>CDS EXAM PATTERN FOR INA, AFA, IMA</h3>
+            <hr>
+            <P>
+                The candidates appearing for the CDS exam to become defence personnel through INA, IMA and AFA must know
+                the exam pattern. The candidates can understand the exam with a better perspective if they know the exam
+                pattern. The UPSC CDS exam pattern has been given below for INA, IMA, and AFA:
+                <br><br>
+                1> The written exam for IMA, INA, and AFA comprises three sections: English, General Knowledge, and
+                Elementary Mathematics <br>
+                2> The total exam duration for IMA, INA, and AFA is six hours (each section is for two hours) <br>
+                3> The total marks of the test for IMA, INA, and AFA are 300
+            </P>
             <br>
-           
-<br><br>
-            <p> <b>CDS exam pattern:</b>  The Union Public Service Commission specifies the <b>CDS exam pattern</b>  for the <b>written exam</b>  and <b>SSB Interview</b> . UPSC lays the best career option for candidates who want to become a commissioned officer in the Indian Defence Forces. The candidate who wants to qualify for the <b>CDS exam</b>  must go through the exam pattern and syllabus of the  CDS exam. 
-<br><br>
-                The latest CDS exam pattern was released on December 20, 2023, along with the release of the CDS 1 notification. UPSC will conduct the CDS 1 exam on April 21, 2024. The CDS exam will be conducted for the admission of the candidates in <b> IMA, AFA, INA, and OTA.</b>
-                <br><br>
-                CDS exam patterns for the INA, AFA, and IMA are similar but the <b>CDS OTA exam pattern</b>  is slightly different from the other three. The CDS exam is conducted in two stages, the written exam and the SSB interview. The CDS exam is an offline exam conducted in pen paper-based format. The CDS marking scheme, negative marking, total marks, exam timing, and the paper pattern for the IMA, INA, AFA, and OTA are available below for the CDS exam. </p>
-
-                <br><br>
-            <h3 >CDS EXAM PATTERN FOR INA, AFA, IMA</h3><hr>
-           <P>
-            The candidates appearing for the CDS exam to become defence personnel through INA, IMA and AFA must know the exam pattern. The candidates can understand the exam with a better perspective if they know the exam pattern. The UPSC CDS exam pattern has been given below for INA, IMA, and AFA:
-<br><br>
-          1>  The written exam for IMA, INA, and AFA comprises three sections: English, General Knowledge, and Elementary Mathematics <br>
-           2> The total exam duration for IMA, INA, and AFA is six hours (each section is for two hours) <br>
-          3>  The total marks of the test for IMA, INA, and AFA are 300 </P> 
-<br>
             <h3>CDS Exam Pattern for Written Test</h3>
-          
-<p>The candidate can check the CDS written test exam pattern in the table below:</p>
 
-<table >
-    <tr>
-        <th class="tablehead">PARTICULARS</th>
-        <th class="tablehead">DETAILS </th>   
-    </tr>
-    <tr>
-        <td>Exam Mode</td>
-        <td>Offline</td>
-       
-    </tr>
-    <tr>
-        <td>Number of exams</td>
-        <td>3</td>
-        
-    </tr>
+            <p>The candidate can check the CDS written test exam pattern in the table below:</p>
 
-    <tr>
-        <td>Name of subjects</td>
-        <td>English, General Awareness, and Maths</td>
-        
-    </tr>
+            <table>
+                <tr>
+                    <th class="tablehead">PARTICULARS</th>
+                    <th class="tablehead">DETAILS </th>
+                </tr>
+                <tr>
+                    <td>Exam Mode</td>
+                    <td>Offline</td>
 
-    <tr>
-        <td>Duration of test</td>
-        <td>English: 2 hours
-<br>
-            General Awareness: 2 hours
-        <br>
-    
-    Maths:2 hours</td>
-        
-    </tr>
+                </tr>
+                <tr>
+                    <td>Number of exams</td>
+                    <td>3</td>
 
-    <tr>
-        <td>Exam time</td>
-        <td>GAT: 10 am to 12.30 pm
-<br>
-            Mathematics: 2 pm to 4.30 pm</td>
-        
-    </tr>
+                </tr>
 
-    <tr>
-        <td>Number of questions</td>
-        <td>English: 120
-<br>
-            Mathematics: 100
-        <br>
-    General Awareness: 120</td>
-        
-    </tr>
+                <tr>
+                    <td>Name of subjects</td>
+                    <td>English, General Awareness, and Maths</td>
 
-    <tr>
-        <td>Language of question paper</td>
-        <td>English and Hindi</td>
-        
-    </tr>
+                </tr>
 
-    <tr>
-        <td>Total marks</td>
-        <td>	
-            300 marks</td>
-        
-    </tr> 
-</table>
-<br><br><br><br><br>
+                <tr>
+                    <td>Duration of test</td>
+                    <td>English: 2 hours
+                        <br>
+                        General Awareness: 2 hours
+                        <br>
+
+                        Maths:2 hours
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Exam time</td>
+                    <td>GAT: 10 am to 12.30 pm
+                        <br>
+                        Mathematics: 2 pm to 4.30 pm
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Number of questions</td>
+                    <td>English: 120
+                        <br>
+                        Mathematics: 100
+                        <br>
+                        General Awareness: 120
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Language of question paper</td>
+                    <td>English and Hindi</td>
+
+                </tr>
+
+                <tr>
+                    <td>Total marks</td>
+                    <td>
+                        300 marks</td>
+
+                </tr>
+            </table>
+            <br><br><br><br><br>
 
 
-            <h3 id="#sec3">NDA Exam Pattern for Written Exam</h3><hr>
-            <p>The exam paper of NDA written exam is divided into two parts, <b>GAT and Mathematics</b> . All the questions in the exam will be objective type. There will be a total of 150 questions in GAT while the Mathematics part will carry a total of 120 questions. Each section of the exam will be held for 2 ½ hours. The GAT section will be for <b>600 marks</b>  while the Mathematics section will carry <b>300 marks</b>. The GAT section is divided into two parts. Part A comprises English while Part B consists of General Knowledge. The structure of the NDA exam pattern for the written exam is given below.</p>
-<br>
+            <h3 id="#sec3">NDA Exam Pattern for Written Exam</h3>
+            <hr>
+            <p>The exam paper of NDA written exam is divided into two parts, <b>GAT and Mathematics</b> . All the
+                questions in the exam will be objective type. There will be a total of 150 questions in GAT while the
+                Mathematics part will carry a total of 120 questions. Each section of the exam will be held for 2 ½
+                hours. The GAT section will be for <b>600 marks</b> while the Mathematics section will carry <b>300
+                    marks</b>. The GAT section is divided into two parts. Part A comprises English while Part B consists
+                of General Knowledge. The structure of the NDA exam pattern for the written exam is given below.</p>
+            <br>
             <table>
                 <tr class="tablehead">
                     <th class="tablehead">Papers</th>
@@ -223,24 +302,24 @@
                     <td>English</td>
                     <td>120</td>
                     <td>100</td>
-                    <td>	
+                    <td>
                         2 hrs</td>
                 </tr>
                 <tr>
                     <td>Paper 2</td>
                     <td>General Awareness</td>
                     <td>120</td>
-                    <td>	
+                    <td>
                         100</td>
-                        <td>2 hrs</td>
+                    <td>2 hrs</td>
                 </tr>
                 <tr>
                     <td>Paper 3</td>
                     <td>Maths</td>
                     <td>100</td>
-                    <td>	
+                    <td>
                         100</td>
-                        <td>2 hrs</td>
+                    <td>2 hrs</td>
                 </tr>
                 <tr>
                     <td>Total</td>
@@ -251,131 +330,175 @@
                 </tr>
             </table>
 
-<br><br><br>
+            <br><br><br>
 
-            <h3>Previous Year Question papers</h3><hr>
+            <h3>Previous Year Question papers</h3>
+            <hr>
 
             <br><br><br>
-            <table >
+            <table class="set_table">
                 <tr>
                     <th class="tablehead">Question papers</th>
-                    <th class="tablehead" width="150px">Download link </th>   
+                    <th class="tablehead" width="150px">Download link </th>
                 </tr>
                 <tr>
                     <td>Combined Defence Services Examination (II), 2023</td>
-                    <td>Maths :<a href="https://upsc.gov.in/sites/default/files/QP-CDSE-II-2023-EleMath-04092023.pdf">Download</a><br>
-                GAT: <a href="hhttps://upsc.gov.in/sites/default/files/QP-CDSE-II-2023-GK-04092023.pdf">Download</a>
-            <br>
-        English: <a href="https://upsc.gov.in/sites/default/files/QP-CDSE-II-2023-Eng-04092023.pdf">Download</a>
-        </td>
-                   
+                    <td>Maths :<a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDSE-II-2023-EleMath-04092023.pdf">Download</a><br>
+                        GAT: <a
+                            href="hhttps://upsc.gov.in/sites/default/files/QP-CDSE-II-2023-GK-04092023.pdf">Download</a>
+                        <br>
+                        English: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDSE-II-2023-Eng-04092023.pdf">Download</a>
+                    </td>
+
                 </tr>
                 <tr>
                     <td>Combined Defence Services Examination (I), 2023</td>
-                    <td>Maths: <a href="https://upsc.gov.in/sites/default/files/QP-CDSE-I-23-ELEMENTARY-MATHEMATICS-170423.pdf">Download</a><br>
-                    GAT: <a href="https://upsc.gov.in/sites/default/files/QP-CDSE-I-23-GENERAL-KNOWLEDGE-170423.pdf">Download</a><br>
-            English: <a href="https://upsc.gov.in/sites/default/files/QP-CDSE-I-23-ENGLISH-170423.pdf">Download</a></td>
-                    
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDSE-I-23-ELEMENTARY-MATHEMATICS-170423.pdf">Download</a><br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDSE-I-23-GENERAL-KNOWLEDGE-170423.pdf">Download</a><br>
+                        English: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDSE-I-23-ENGLISH-170423.pdf">Download</a>
+                    </td>
+
                 </tr>
-            
+
                 <tr>
                     <td>Combined Defence Services Examination (II), 2022</td>
                     <td>
-             Maths: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-II-22-ELEMENTARY-MATHEMATICS-050922.pdf">Download</a><br>
-            GAT: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-II-22-GENERAL-KNOWLEDGE-050922.pdf">Download</a><br>
-    English: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-II-22-ENGLISH-050922.pdf">Download</a></td>
-                    
-            <tr>
-                <td>Combined Defence Services Examination (I), 2022</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-I-22-ELEMENTARY-MATHEMATICS-120422.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-I-22-GENERAL-KNOWLEDGE-120422.pdf">Download</a> <br>
-        English: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-I-22-ENGLISH-120422.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>Combined Defence Services Examination (II), 2021</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/QP-ELEMATH-CDS-EXAM-II-2021-161121.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/QP-GK-CDS-EXAM-II-2021-161121.pdf">Download</a><br>
-        English: <a href="https://upsc.gov.in/sites/default/files/QP-ENGL-CDS-EXAM-II-2021-161121.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>Combined Defence Services Examination (I), 2021</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/CDS-I-21-Elem_Maths.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/CDS-I-21-Gen_Knowledge.pdf">Download</a><br>
-        English: <a href="https://upsc.gov.in/sites/default/files/CDS-I-21-ENGLISH.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>Combined Defence Services Examination (II), 2020</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/QP-CDS2-20-ELEMENTARY_MATHS.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/QP-CDS2-20-GENERAL_KNOWLEDGE.pdf">Download</a><br>
-        English: <a href="https://upsc.gov.in/sites/default/files/QP-CDS2-20-ENGLISH.pdf">Download</a></td>
-                
-            </tr>
-        
-            <tr>
-                <td>Combined Defence Services Examination (I), 2020</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/CDS_I_2020_EL_MATHS.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/CDS_I_2020_GK.pdf">Download</a><br>
-        English: <a href="https://upsc.gov.in/sites/default/files/CDS_I_2020_ENGLISH.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>Combined Defence Services Examination (II), 2019</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-II-19-ELE_MATHS.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-II-19-GEN_KNOWLEDGE.pdf">Download</a><br>
-        English: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-II-19-ENGLISH.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>Combined Defence Services Examination (I), 2019</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-I-2019-EleMath.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-I-2019-GK.pdf">Download</a><br>
-        English: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-I-2019-English.pdf">Download</a></td>
-                
-            </tr>
-           
+                        Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-II-22-ELEMENTARY-MATHEMATICS-050922.pdf">Download</a><br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-II-22-GENERAL-KNOWLEDGE-050922.pdf">Download</a><br>
+                        English: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-II-22-ENGLISH-050922.pdf">Download</a>
+                    </td>
+
+                <tr>
+                    <td>Combined Defence Services Examination (I), 2022</td>
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-I-22-ELEMENTARY-MATHEMATICS-120422.pdf">Download</a><br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-I-22-GENERAL-KNOWLEDGE-120422.pdf">Download</a>
+                        <br>
+                        English: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-I-22-ENGLISH-120422.pdf">Download</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Combined Defence Services Examination (II), 2021</td>
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-ELEMATH-CDS-EXAM-II-2021-161121.pdf">Download</a><br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-GK-CDS-EXAM-II-2021-161121.pdf">Download</a><br>
+                        English: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-ENGL-CDS-EXAM-II-2021-161121.pdf">Download</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Combined Defence Services Examination (I), 2021</td>
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/CDS-I-21-Elem_Maths.pdf">Download</a><br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/CDS-I-21-Gen_Knowledge.pdf">Download</a><br>
+                        English: <a href="https://upsc.gov.in/sites/default/files/CDS-I-21-ENGLISH.pdf">Download</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Combined Defence Services Examination (II), 2020</td>
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS2-20-ELEMENTARY_MATHS.pdf">Download</a><br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS2-20-GENERAL_KNOWLEDGE.pdf">Download</a><br>
+                        English: <a href="https://upsc.gov.in/sites/default/files/QP-CDS2-20-ENGLISH.pdf">Download</a>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Combined Defence Services Examination (I), 2020</td>
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/CDS_I_2020_EL_MATHS.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/CDS_I_2020_GK.pdf">Download</a><br>
+                        English: <a href="https://upsc.gov.in/sites/default/files/CDS_I_2020_ENGLISH.pdf">Download</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Combined Defence Services Examination (II), 2019</td>
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-II-19-ELE_MATHS.pdf">Download</a><br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-II-19-GEN_KNOWLEDGE.pdf">Download</a><br>
+                        English: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-II-19-ENGLISH.pdf">Download</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Combined Defence Services Examination (I), 2019</td>
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-I-2019-EleMath.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/QP-CDS-I-2019-GK.pdf">Download</a><br>
+                        English: <a
+                            href="https://upsc.gov.in/sites/default/files/QP-CDS-I-2019-English.pdf">Download</a></td>
+
+                </tr>
+
             </table>
 
             <br><br><br><br>
 
 
-            <h2>CDS study material</h2><hr>
+            <h2>CDS study material</h2>
+            <hr>
             <br>
-            <table >
+            <table>
                 <tr class="tablehead">
                     <th class="tablehead">Papers</th>
                     <th width="100px" class="tablehead">Download</th>
-                    
+
                 </tr>
                 <tr>
                     <td>CDS Mock Test Sample Paper - GAT </td>
-                    <td> <a href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/CDS_GK_SQP-1.pdf?v=1697621275">Download</a> </td>
-                   
+                    <td> <a
+                            href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/CDS_GK_SQP-1.pdf?v=1697621275">Download</a>
+                    </td>
+
                 </tr>
                 <tr>
                     <td>CDS Mock Test Sample Paper - English</td>
-                    <td> <a href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/nda_gs.pdf?v=1670820477">Download</a> </td>
-                  
+                    <td> <a
+                            href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/nda_gs.pdf?v=1670820477">Download</a>
+                    </td>
+
                 </tr>
                 <tr>
                     <td>CDS Mock Test Sample Paper - Maths</td>
-                    <td> <a href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/CDS_math_SQP-1.pdf?v=1697621276">Download</a> </td>
-                   
+                    <td> <a
+                            href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/CDS_math_SQP-1.pdf?v=1697621276">Download</a>
+                    </td>
+
                 </tr>
 
                 <tr>
                     <td>CDS E-Book (Pathfinder)</td>
-                    <td> <a href="https://blogmedia.testbook.com/blog/wp-content/uploads/2023/04/pathfinder-cds-combined-defence-expertsarihant-90f15b25.pdf">Download</a> </td>
-                   
+                    <td> <a
+                            href="https://blogmedia.testbook.com/blog/wp-content/uploads/2023/04/pathfinder-cds-combined-defence-expertsarihant-90f15b25.pdf">Download</a>
+                    </td>
+
                 </tr>
             </table>
-<br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

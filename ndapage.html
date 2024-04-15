@@ -1,203 +1,283 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>NDA page</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <style type="text/css">
-        *{
+        * {
             margin: 0;
             padding: 0px;
             ;
-            font-family: 'Source Sans Pro',Arial, Helvetica, sans-serif;
-            
+            font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+
         }
-        body{
-            background: rgba(254, 254, 254, 0.573) url('https://images.pexels.com/photos/3699921/pexels-photo-3699921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') ;
-         
-      /*  background-color: #B5c99A; */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-blend-mode: overlay;
-        height: 100vh;
-        width: auto; 
+
+        body {
+            background: rgba(254, 254, 254, 0.573) url('https://images.pexels.com/photos/3699921/pexels-photo-3699921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+
+            /*  background-color: #B5c99A; */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            height: 100vh;
+            width: auto;
         }
-        
-        h2{
+
+        h2 {
             padding: 20px;
             color: black;
         }
-        h3,p{
+
+        h3,
+        p {
             padding: 10px 20px;
-           
+
         }
-        hr{
+
+        hr {
             margin: 0 20px;
         }
-        .left{
-            width:30%;
+
+        .left {
+            width: 30%;
             height: auto;
-           
+
         }
-        .photo{
-            width:330px;
+
+        .photo {
+            width: 330px;
             height: 200px;
             background-image: url('https://static.toiimg.com/thumb/msid-88233600,width-400,height-225,resizemode-72/88233600.jpg');
             background-size: cover;
             border-radius: 10px;
             box-shadow: 2px 4px 4px 2px rgb(54, 51, 51);
         }
-        .container{
+
+        .container {
             display: flex;
             justify-content: space-between;
-            
+
         }
-        .right{
-            width:70%;
+
+        .right {
+            width: 70%;
             height: auto;
             /* background-color: #B5C99A; */
             /* background: linear-gradient(to right, transparent,#718355); */
         }
-        ul{
+
+        ul {
             padding: 10px 40px;
         }
-        .tablehead{
+
+        .tablehead {
             background-color: #b59f30c4;
             padding: 15px;
-            
+
         }
-        td{
+
+        td {
             background-color: rgba(245, 245, 245, 0.331);
             padding: 10px;
         }
-        .nda{
+
+        .nda {
             font-family: serif;
             font-size: 50px;
 
         }
-        table{
+
+        table {
             align-items: center;
             margin-left: 100px;
         }
-        .dropdown{
+
+        .dropdown {
             padding: 20px;
             width: 35%;
-            background-image: linear-gradient(to bottom right,#CFE1B9,#718355);
+            background-image: linear-gradient(to bottom right, #CFE1B9, #718355);
             border-radius: 20px;
             margin-left: 30px;
             font-size: 26px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             box-shadow: 1px 1px 20px rgb(81, 78, 78)
         }
-      
-    
+
+        #nda_aside{
+            /* position: fixed; */
+            height: 100vh;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        #nda_container{
+            height: 100vh;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        ::-webkit-scrollbar
+        {
+            background: transparent;
+            width: 5px;
+        }
+        ::-webkit-scrollbar-thumb
+        {
+            /* background: #fd9843; */
+            background: transparent;
+        }
+        #nda_heading{
+            color: #052c65;
+            padding: 2rem 1rem;
+            font-size: 2.5rem;
+            /* background: var(--bs-dark); */
+        }
+
     </style>
+    <link rel="stylesheet" href="style.css">
+
+    
 </head>
+
 <body>
     <div class="container">
-        <div class="left bg-light">
+        <div class="left bg-light" id="nda_aside">
             <h2>DefenceJourney</h2>
             <div class="photo"></div>
-            <h3>NDA Course</h3><hr>
+            <h3>NDA Course</h3>
+            <hr>
             <br>
-            <p > <b > COACHING CLASSES FOR NDA </b> <br> <br>Their are many coaching institutes offering NDA course in Chandigarh. <br><br>
-            
-          <u>Below are some best coaching institutes in sector 34 Chandigarh:</u>   <br><br>
-        1) <b>IFA</b> <br>
-         <b>Address:</b> SCO No.94-95 Top floor, Sector 34A, Sector 34, Chandigarh, 160022
-        
-        <br>
-    For online-demo classes: <a href="https://www.youtube.com/@ifadefenceacademy8072/featured">Youtube Channel</a> <br><br>
-    2) <b>Chandigarh Career Group</b><br>
-    <b>Address:</b> SCO 110-111, 3rd floor, Sector 34A, Sector 34, Chandigarh, 160022 <br>
-    For online-demo classes: <a href="https://www.youtube.com/@ChandigarhCareerGroup">Youtube channel</a> <br><br>
-    3) <b>Takshila Classes</b> <br>
-    <b>Address:</b> SCO 116-117, 2nd Floor, Sector 34A, Chandigarh, 160022 <br>
-    for online-deno classes: <a href="https://www.youtube.com/@ETakshilaClasses/featured">Youtube channel</a>
-    
-    </p>
-        </div>
-        <div class="right">
-            <h2 class="dispaly-1">NATIONAL DEFENCE ACADEMY</h2> <br> <hr>
-            <br>
-           
-<br><br>
-            <p> <b> NDA Exam Pattern :</b> Union Public Service Commission (UPSC) prescribes NDA exam pattern along with the notification. NDA exam is conducted in pen and paper-based mode. All the questions asked in the exam are objective-type. <b>NDA written exam comprises two papers-Maths and General Ability Test (GAT)</b> . NDA question paper carries a total of 270 questions. The written exam comprises 900 marks. Candidates need to secure 25 per cent in each paper of NDA exam. There are negative marking for wrong answers in the exam.
-<br><br>
-                Candidates qualifying the written exam are called for SSB interview, conducted in two stages. The first stage comprises OIR and PP & DT tests and the second stage comprises psychology tests and the conference. The total marks allotted to SSB interview are 900. Candidates need to secure NDA cut off marks prescribed by UPSC for the written exam and SSB interview. We have provided the latest NDA exam pattern where candidates can get several important things about the NDA 2024, like the mode of exam, total marks allotted, the duration of the exam, types of questions asked, etc.</p>
+            <p> <b> COACHING CLASSES FOR NDA </b> <br> <br>Their are many coaching institutes offering NDA course in
+                Chandigarh. <br><br>
 
+                <u>Below are some best coaching institutes in sector 34 Chandigarh:</u> <br><br>
+                1) <b>IFA</b> <br>
+                <b>Address:</b> SCO No.94-95 Top floor, Sector 34A, Sector 34, Chandigarh, 160022
+
+                <br>
+                For online-demo classes: <a href="https://www.youtube.com/@ifadefenceacademy8072/featured">Youtube
+                    Channel</a> <br><br>
+                2) <b>Chandigarh Career Group</b><br>
+                <b>Address:</b> SCO 110-111, 3rd floor, Sector 34A, Sector 34, Chandigarh, 160022 <br>
+                For online-demo classes: <a href="https://www.youtube.com/@ChandigarhCareerGroup">Youtube channel</a>
                 <br><br>
-            <h3 id="#sec1">NDA EXAM PATTERN</h3><hr>
-           <P>
-            NDA exam pattern comprises details such as mode of exam, total marks allotted, the duration of the exam, types of questions asked, etc. The exam pattern helps candidates prepare for the upcoming NDA  exam and secure a good rank. Understanding the NDA exam pattern is one of the first steps in ensuring success in the exam. By going through the exam pattern, candidates are able to understand the entire structure of the recruitment process. </P> 
-<br>
-            <h3 id="#sec2">NDA Exam Pattern Overview</h3>
-          
-<p>Candidates can check below a few important highlights related to the NDA exam pattern.</p>
+                3) <b>Takshila Classes</b> <br>
+                <b>Address:</b> SCO 116-117, 2nd Floor, Sector 34A, Chandigarh, 160022 <br>
+                for online-deno classes: <a href="https://www.youtube.com/@ETakshilaClasses/featured">Youtube
+                    channel</a>
 
-<table >
-    <tr>
-        <th class="tablehead">PARTICULARS</th>
-        <th class="tablehead">DETAILS </th>   
-    </tr>
-    <tr>
-        <td>Exam Mode</td>
-        <td>Offline</td>
-       
-    </tr>
-    <tr>
-        <td>Number of papers</td>
-        <td>GAT and Mathematics</td>
-        
-    </tr>
+            </p>
+        </div>
 
-    <tr>
-        <td>Duration of test</td>
-        <td>GAT: 2 ½ hours
-<br>
-            Mathematics: 2 ½ hours</td>
-        
-    </tr>
+        <div class="right" id="nda_container">
 
-    <tr>
-        <td>Exam time</td>
-        <td>GAT: 10 am to 12.30 pm
-<br>
-            Mathematics: 2 pm to 4.30 pm</td>
-        
-    </tr>
+            <!-- <h2 class="dispaly-1" id="nda_heading">NATIONAL DEFENCE ACADEMY</h2> -->
+            <h2 class="dispaly-1" id="nda_heading"> &Nopf;&Aopf;&Topf;&Iopf;&Oopf;&Nopf;&Aopf;&Lopf;  &Dopf;&Eopf;&Fopf;&Eopf;&Nopf;&Copf;&Eopf; &Aopf;&Copf;&Aopf;&Dopf;&Eopf;&Mopf;&Yopf;   </h2>
 
-    <tr>
-        <td>Number of questions</td>
-        <td>GAT: 150
-<br>
-            Mathematics: 120</td>
-        
-    </tr>
+            <div class="w-100 border border-light mt-3 mb-5"></div>
 
-    <tr>
-        <td>Language of question paper</td>
-        <td>English and Hindi</td>
-        
-    </tr>
+            <p> <b> NDA Exam Pattern :</b> Union Public Service Commission (UPSC) prescribes NDA exam pattern along with
+                the notification. NDA exam is conducted in pen and paper-based mode. All the questions asked in the exam
+                are objective-type. <b>NDA written exam comprises two papers-Maths and General Ability Test (GAT)</b> .
+                NDA question paper carries a total of 270 questions. The written exam comprises 900 marks. Candidates
+                need to secure 25 per cent in each paper of NDA exam. There are negative marking for wrong answers in
+                the exam.
+                <br><br>
+                Candidates qualifying the written exam are called for SSB interview, conducted in two stages. The first
+                stage comprises OIR and PP & DT tests and the second stage comprises psychology tests and the
+                conference. The total marks allotted to SSB interview are 900. Candidates need to secure NDA cut off
+                marks prescribed by UPSC for the written exam and SSB interview. We have provided the latest NDA exam
+                pattern where candidates can get several important things about the NDA 2024, like the mode of exam,
+                total marks allotted, the duration of the exam, types of questions asked, etc.
+            </p>
 
-    <tr>
-        <td>Total marks</td>
-        <td>	
-            Written Exam: 900 (600 for GAT and 300 for Mathematics)
+            <br><br>
+            <h3 id="#sec1">NDA EXAM PATTERN</h3>
+            <hr>
+            <P>
+                NDA exam pattern comprises details such as mode of exam, total marks allotted, the duration of the exam,
+                types of questions asked, etc. The exam pattern helps candidates prepare for the upcoming NDA exam and
+                secure a good rank. Understanding the NDA exam pattern is one of the first steps in ensuring success in
+                the exam. By going through the exam pattern, candidates are able to understand the entire structure of
+                the recruitment process. </P>
             <br>
-            SSB Interview: 900</td>
-        
-    </tr> 
-</table>
-<br><br><br><br><br>
+            <h3 id="#sec2">NDA Exam Pattern Overview</h3>
+
+            <p>Candidates can check below a few important highlights related to the NDA exam pattern.</p>
+
+            <table>
+                <tr>
+                    <th class="tablehead">PARTICULARS</th>
+                    <th class="tablehead">DETAILS </th>
+                </tr>
+                <tr>
+                    <td>Exam Mode</td>
+                    <td>Offline</td>
+
+                </tr>
+                <tr>
+                    <td>Number of papers</td>
+                    <td>GAT and Mathematics</td>
+
+                </tr>
+
+                <tr>
+                    <td>Duration of test</td>
+                    <td>GAT: 2 ½ hours
+                        <br>
+                        Mathematics: 2 ½ hours
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Exam time</td>
+                    <td>GAT: 10 am to 12.30 pm
+                        <br>
+                        Mathematics: 2 pm to 4.30 pm
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Number of questions</td>
+                    <td>GAT: 150
+                        <br>
+                        Mathematics: 120
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Language of question paper</td>
+                    <td>English and Hindi</td>
+
+                </tr>
+
+                <tr>
+                    <td>Total marks</td>
+                    <td>
+                        Written Exam: 900 (600 for GAT and 300 for Mathematics)
+                        <br>
+                        SSB Interview: 900
+                    </td>
+
+                </tr>
+            </table>
+            <br><br><br><br><br>
 
 
-            <h3 id="#sec3">NDA Exam Pattern for Written Exam</h3><hr>
-            <p>The exam paper of NDA written exam is divided into two parts, <b>GAT and Mathematics</b> . All the questions in the exam will be objective type. There will be a total of 150 questions in GAT while the Mathematics part will carry a total of 120 questions. Each section of the exam will be held for 2 ½ hours. The GAT section will be for <b>600 marks</b>  while the Mathematics section will carry <b>300 marks</b>. The GAT section is divided into two parts. Part A comprises English while Part B consists of General Knowledge. The structure of the NDA exam pattern for the written exam is given below.</p>
-<br>
+            <h3 id="#sec3">NDA Exam Pattern for Written Exam</h3>
+            <hr>
+            <p>The exam paper of NDA written exam is divided into two parts, <b>GAT and Mathematics</b> . All the
+                questions in the exam will be objective type. There will be a total of 150 questions in GAT while the
+                Mathematics part will carry a total of 120 questions. Each section of the exam will be held for 2 ½
+                hours. The GAT section will be for <b>600 marks</b> while the Mathematics section will carry <b>300
+                    marks</b>. The GAT section is divided into two parts. Part A comprises English while Part B consists
+                of General Knowledge. The structure of the NDA exam pattern for the written exam is given below.</p>
+            <br>
             <table>
                 <tr class="tablehead">
                     <th class="tablehead">Papers</th>
@@ -209,15 +289,15 @@
                     <td>Paper 1</td>
                     <td>Mathematics</td>
                     <td>300</td>
-                    <td>	
+                    <td>
                         2 ½</td>
                 </tr>
                 <tr>
                     <td>Paper 2</td>
                     <td>GAT</td>
-                    <td>	
+                    <td>
                         600</td>
-                        <td>2 ½</td>
+                    <td>2 ½</td>
                 </tr>
                 <tr>
                     <td>Total</td>
@@ -227,129 +307,147 @@
                 </tr>
             </table>
 
-<br><br><br>
+            <br><br><br>
 
-            <h3>Previous Year Question papers</h3><hr>
+            <h3>Previous Year Question papers</h3>
+            <hr>
 
             <br><br><br>
-            <table >
+            <table>
                 <tr>
                     <th class="tablehead">Question papers</th>
-                    <th class="tablehead" width="150px">Download link </th>   
+                    <th class="tablehead" width="150px">Download link </th>
                 </tr>
                 <tr>
                     <td>National Defence Academy and Naval Academy Examination (II), 2018</td>
                     <td>Maths :<a href="https://upsc.gov.in/sites/default/files/NDAII18-MATHEMATICS2.pdf">Download</a>
-                    <br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/NDAII18-GENERAL-ABILITY-TEST2.pdf">Download</a></td>
-                   
+                        <br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/NDAII18-GENERAL-ABILITY-TEST2.pdf">Download</a>
+                    </td>
+
                 </tr>
                 <tr>
                     <td>National Defence Academy and Naval Academy Examination (I), 2018</td>
                     <td>Maths: <a href="https://upsc.gov.in/sites/default/files/NDA-I-18-Math.pdf">Download</a><br>
-                    GAT: <a href="https://upsc.gov.in/sites/default/files/NDA-I-18-GAT.pdf">Download</a></td>
-                    
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/NDA-I-18-GAT.pdf">Download</a></td>
+
                 </tr>
-            
+
                 <tr>
                     <td>National Defence Academy & Naval Academy Examination (II), 2017</td>
                     <td>
-             Maths: <a href="https://upsc.gov.in/sites/default/files/QPaper_NDA_II_2017_Math.pdf">Download</a><br>
-            GAT: <a href="https://upsc.gov.in/sites/default/files/QPaper_NDA_II_2017_GAT.pdf">Download</a></td>
-                    
-            <tr>
-                <td>National Defence Academy & Naval Academy Examination (I), 2017</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/Math_NDA_I_17.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/GAT_NDA_I_17.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>National Defence Academy and Naval Academy Examination (II), 2016</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/NDA2_16_Mathematics_0_0.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/NDA2_16_GENERAL_ABILITY_TEST_0_0.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>National Defence Academy & Naval Academy Exam (I), 2016</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/MATH_1.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/GAT_2.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>National Defence Academy & Naval Academy Exam (II), 2015</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/MATH_2.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/GAT_3.pdf">Download</a></td>
-                
-            </tr>
-        
-            <tr>
-                <td>National Defence Academy & Naval Academy Exam (I), 2015</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/MATH%20%282%29.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/GAT%20%281%29.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>National Defence Academy & Naval Academy Exam (II), 2014</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/MATH_0.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/GAT_1.pdf">Download</a></td>
-                
-            </tr>
-            <tr>
-                <td>National Defence Academy & Naval Academy Exam (I), 2014</td>
-                <td>Maths: <a href="https://upsc.gov.in/sites/default/files/Math%282%29.pdf">Download</a><br>
-                GAT: <a href="https://upsc.gov.in/sites/default/files/GAT%281%29.pdf">Download</a></td>
-                
-            </tr>
-           
+                        Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/QPaper_NDA_II_2017_Math.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/QPaper_NDA_II_2017_GAT.pdf">Download</a>
+                    </td>
+
+                <tr>
+                    <td>National Defence Academy & Naval Academy Examination (I), 2017</td>
+                    <td>Maths: <a href="https://upsc.gov.in/sites/default/files/Math_NDA_I_17.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/GAT_NDA_I_17.pdf">Download</a></td>
+
+                </tr>
+                <tr>
+                    <td>National Defence Academy and Naval Academy Examination (II), 2016</td>
+                    <td>Maths: <a
+                            href="https://upsc.gov.in/sites/default/files/NDA2_16_Mathematics_0_0.pdf">Download</a><br>
+                        GAT: <a
+                            href="https://upsc.gov.in/sites/default/files/NDA2_16_GENERAL_ABILITY_TEST_0_0.pdf">Download</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>National Defence Academy & Naval Academy Exam (I), 2016</td>
+                    <td>Maths: <a href="https://upsc.gov.in/sites/default/files/MATH_1.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/GAT_2.pdf">Download</a></td>
+
+                </tr>
+                <tr>
+                    <td>National Defence Academy & Naval Academy Exam (II), 2015</td>
+                    <td>Maths: <a href="https://upsc.gov.in/sites/default/files/MATH_2.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/GAT_3.pdf">Download</a></td>
+
+                </tr>
+
+                <tr>
+                    <td>National Defence Academy & Naval Academy Exam (I), 2015</td>
+                    <td>Maths: <a href="https://upsc.gov.in/sites/default/files/MATH%20%282%29.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/GAT%20%281%29.pdf">Download</a></td>
+
+                </tr>
+                <tr>
+                    <td>National Defence Academy & Naval Academy Exam (II), 2014</td>
+                    <td>Maths: <a href="https://upsc.gov.in/sites/default/files/MATH_0.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/GAT_1.pdf">Download</a></td>
+
+                </tr>
+                <tr>
+                    <td>National Defence Academy & Naval Academy Exam (I), 2014</td>
+                    <td>Maths: <a href="https://upsc.gov.in/sites/default/files/Math%282%29.pdf">Download</a><br>
+                        GAT: <a href="https://upsc.gov.in/sites/default/files/GAT%281%29.pdf">Download</a></td>
+
+                </tr>
+
             </table>
 
             <br><br><br><br>
 
 
-            <h2>NDA study material</h2><hr>
+            <h2>NDA study material</h2>
+            <hr>
             <br>
-            <table >
+            <table>
                 <tr class="tablehead">
                     <th class="tablehead">Papers</th>
                     <th width="100px" class="tablehead">Download</th>
-                    
+
                 </tr>
                 <tr>
                     <td>NDA Mock Test Sample Paper - Maths </td>
-                    <td> <a href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/nda_math.pdf?v=1670820477">Download</a> </td>
-                   
+                    <td> <a
+                            href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/nda_math.pdf?v=1670820477">Download</a>
+                    </td>
+
                 </tr>
                 <tr>
                     <td>NDA Mock Test Sample Paper - General Studies</td>
-                    <td> <a href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/nda_gs.pdf?v=1670820477">Download</a> </td>
-                  
+                    <td> <a
+                            href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/nda_gs.pdf?v=1670820477">Download</a>
+                    </td>
+
                 </tr>
                 <tr>
                     <td>NDA Mock Test Sample Paper - English</td>
-                    <td> <a href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/nda_english.pdf?v=1670820477">Download</a> </td>
-                   
+                    <td> <a
+                            href="https://cdn.shopify.com/s/files/1/0572/7299/1924/files/nda_english.pdf?v=1670820477">Download</a>
+                    </td>
+
                 </tr>
 
                 <tr>
                     <td>NDA NA E-Book (Pathfinder)</td>
-                    <td> <a href="https://blogmedia.testbook.com/blog/wp-content/uploads/2023/07/arihant-pathfinder-nda-na-www.examsakha.in_-a883b5ec.pdf">Download</a> </td>
-                   
+                    <td> <a
+                            href="https://blogmedia.testbook.com/blog/wp-content/uploads/2023/07/arihant-pathfinder-nda-na-www.examsakha.in_-a883b5ec.pdf">Download</a>
+                    </td>
+
                 </tr>
 
                 <tr>
                     <td>NDA Maths book for practice</td>
-                    <td> <a href="https://drive.google.com/file/d/1TIF1LxaW6dnAoSEc0eMh7obdOaF8xkAm/view">Download</a> </td>
-                   
+                    <td> <a href="https://drive.google.com/file/d/1TIF1LxaW6dnAoSEc0eMh7obdOaF8xkAm/view">Download</a>
+                    </td>
+
                 </tr>
 
-              
+
             </table>
-<br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-</html>
 
+</html>
